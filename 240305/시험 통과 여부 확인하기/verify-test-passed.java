@@ -6,8 +6,9 @@ public class Main {
 
         int a = sc.nextInt();
 
-        if (a > 80)
+        if (a > 80) {
         System.out.print("pass");
+        }
 
         else {
             int b = 80 - a;
