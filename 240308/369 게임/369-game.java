@@ -7,7 +7,7 @@ public class Main {
         int n = sc.nextInt();
 
         for ( int i = 1 ; i <= n ; i ++ ) {
-            if ( i % 3 == 0 ) 
+            if ( i % 3 == 0 || i >= 30 && i < 40 ) 
                 System.out.print( 0 + " " );
             else
             System.out.print ( i + " " );
