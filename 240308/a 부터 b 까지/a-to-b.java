@@ -9,16 +9,15 @@ public class Main {
 
         System.out.print( a + " " );
 
-        do {
-            if ( a % 2 ==1 ) {
-                a = a*2;
-                System.out.print( a + " " );
+        for ( int i = a ; i < b ;) {
+            if ( i % 2 ==1 ) {
+                i *= 2;
+                System.out.print( i + " " );
             }
             else {
-                a += 3;
-                System.out.print( a + " " );
+                i += 3;
+                System.out.print( i + " " );
             }
         }
-        while ( a < b );
     }
 }
