@@ -5,15 +5,12 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
-        int a=1, div = n;
+        int a=0, div = n;
 
         for ( int i = 1 ; i <= n ; i++ ) {
             div /= i;
-            if ( div >= 1 ) {
-                a++;
-                continue;
-            }
-            else {
+            a++;
+            if ( div <= 1 ) {
                 System.out.print(a);
                 break;
             }
