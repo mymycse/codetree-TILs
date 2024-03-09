@@ -7,9 +7,11 @@ public class Main {
         int n = sc.nextInt();
         int sum = 0, a = 0;
 
-        for ( int i = 1 ; sum <= n ; i++ ) {
+        for ( int i = 1 ; i <= n ; i++ ) {
             sum += i;
             a++;
+            if ( sum >= n )
+            break;
         }
 
         System.out.print(a);
