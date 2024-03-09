@@ -6,7 +6,7 @@ public class Main {
 
         int n, k = 0, sum = 0;
 
-        while ( true ) {
+        for ( ;; ) {
             n = sc.nextInt();
             if ( n >= 30 )
             break;
