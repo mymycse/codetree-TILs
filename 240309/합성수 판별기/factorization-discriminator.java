@@ -15,6 +15,6 @@ public class Main {
             }
         }
         if ( cnt == 0 )
-        System.out.print("NO");
+        System.out.print("N");
     }
 }
