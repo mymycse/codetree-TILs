@@ -8,7 +8,7 @@ public class Main {
 
         for ( ;; ) {
             n = sc.nextInt();
-            if ( n >= 30 )
+            if ( n >= 30 || n < 20 )
             break;
 
             sum += n;
