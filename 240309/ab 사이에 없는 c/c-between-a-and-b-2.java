@@ -8,14 +8,14 @@ public class Main {
         int b = sc.nextInt();
         int c = sc.nextInt();
 
-        boolean satisfied;
+        boolean satisfied = false;
 
         for ( int i = a ; i <= b ; i++ ) {
             if ( i % c == 0 )
             satisfied = true;
         }
 
-        if ( satisfied = true )
+        if ( satisfied == true )
         System.out.print("NO");
         else
         System.out.print("YES");
