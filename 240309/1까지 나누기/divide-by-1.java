@@ -13,9 +13,10 @@ public class Main {
                 a++;
                 continue;
             }
-            else
-            System.out.print(a);
-            break;
+            else {
+                System.out.print(a);
+                break;
+            }
         }
     }
 }
