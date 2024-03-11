@@ -5,11 +5,11 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
+        int a = 2;
 
         for ( int i = 1 ; i <= n ; i++ ) {
-            int a = i*2;
             for ( int j = 0 ; j < n ; j++ ) {
-                if ( a > 8  ) {
+                if ( a > 8 ) {
                     a = 2;
                 }
                 System.out.print(a + " ");
