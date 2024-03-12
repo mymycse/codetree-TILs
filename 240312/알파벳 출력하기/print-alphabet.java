@@ -11,6 +11,8 @@ public class Main {
             for ( int j = 0 ; j <= i ; j++ ) {
                 System.out.print((char)cnt);
                 cnt++;
+                if ( cnt > 90 )
+                cnt = 65;
         }
             System.out.println();
         }
