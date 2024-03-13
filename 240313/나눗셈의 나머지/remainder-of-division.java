@@ -11,8 +11,8 @@ public class Main {
         int[] arr = new int[11];
 
         while ( true ) {
-            a = a/b;
             arr[a%b]++;
+            a /= b;
             if ( a <= 1 )
             break;
         }
