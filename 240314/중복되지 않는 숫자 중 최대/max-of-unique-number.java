@@ -5,23 +5,23 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
-        int max1 = 0, max2=0;
+        int max = 0;
         
         int[] arr = new int[n];
+        int[] cnt = new int[1001];
 
         for ( int i = 0 ; i < n ; i++ ) {
             arr[i] = sc.nextInt();
-
-            if ( arr[i] >= max1 ) {
-                max2 = max1;
-                max1 = arr[i];
-            }
-            else if ( arr[i] >= max2 )
-            max2 = arr[i];
+            cnt[arr[i]]++;
+            if ( arr[i] > max )
+            max = arr[i];
         }
-        if ( max1 == max2 )
-        System.out.print(-1);
-        else
-        System.out.print(max1);
+        for ( int j = max ; j >= 0 ; j-- ) {
+            if ( cnt[j] == 0 || cnt[j] > 1 )
+            continue;
+            else
+            System.out.print(j);
+            break;
+        }
     }
 }
