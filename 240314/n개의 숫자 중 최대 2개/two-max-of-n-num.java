@@ -19,8 +19,8 @@ public class Main {
             max2 = arr[1];
         }
         else {
-            max1 = arr[1];
-            max2 = arr[2];
+            max1 = arr[0];
+            max2 = arr[1];
         }
 
         for ( int i = 2 ; i < n ; i++ ) {
