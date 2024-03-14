@@ -1,6 +1,4 @@
 import java.util.Scanner;
-import java.util.Arrays;
-import java.util.Collections;
 
 public class Main {
     public static void main(String[] args) {
@@ -8,16 +6,32 @@ public class Main {
 
         int n = sc.nextInt();
         int cnt=0;
-        int max = Integer.MIN_VALUE;
+        int max1 = 0, max2 = 0;
 
-        Integer [] arr = new Integer [n];
+        int [] arr = new int [n];
 
         for ( int i = 0 ; i < n ; i++ ) {
             arr[i] = sc.nextInt();
         }
 
-        Arrays.sort(arr, Collections.reverseOrder());
+        if ( arr[0] > arr[1] ) {
+            max1 = arr[0];
+            max2 = arr[1];
+        }
+        else {
+            max1 = arr[1];
+            max2 = arr[2];
+        }
 
-        System.out.print(arr[0] + " " + arr[1]);
+        for ( int i = 2 ; i < n ; i++ ) {
+            if ( arr[i] > max1 ) {
+                max2 = max1;
+                max1 = arr[i];
+            }
+            else if ( arr[i] > max2 )
+            max2 = arr[i];
+        }
+
+        System.out.print(max1 + " " + max2);
     }
 }
