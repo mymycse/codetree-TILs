@@ -5,7 +5,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
-        int max = 0;
+        int max = 0, num = 0;
         
         int[] arr = new int[n];
         int[] cnt = new int[1001];
@@ -19,9 +19,15 @@ public class Main {
         for ( int j = max ; j >= 0 ; j-- ) {
             if ( cnt[j] == 0 || cnt[j] > 1 )
             continue;
-            else
-            System.out.print(j);
-            break;
+            else {
+                num++;
+                max = j;
+                break;
+            }
         }
+        if ( num > 0 )
+        System.out.print(max);
+        else
+        System.out.print(-1);
     }
 }
