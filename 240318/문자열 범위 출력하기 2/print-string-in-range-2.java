@@ -9,8 +9,9 @@ public class Main {
 
         int leng = s.length();
 
-        if ( n >= s.length() ) 
-            System.out.print(s);
+        if ( n >= leng ) 
+            for ( int i = leng-1 ; i >= 0 ; i-- )
+                System.out.print(s.charAt(i));
         else
             for ( int i = leng-1 ; i >= leng - n ; i-- )
                 System.out.print(s.charAt(i));
