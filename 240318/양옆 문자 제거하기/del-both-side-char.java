@@ -7,6 +7,6 @@ public class Main {
         String str = sc.next();
         int leng = str.length();
 
-        System.out.print( str.substring(0,2) + str.substring(3,leng-2) + str.substring(leng-1) );
+        System.out.print( str.substring(0,1) + str.substring(2,leng-2) + str.substring(leng-1) );
     }
 }
