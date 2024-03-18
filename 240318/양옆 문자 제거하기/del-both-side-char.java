@@ -5,7 +5,8 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         String str = sc.next();
+        int leng = str.length();
 
-        System.out.print( str.substring(0,2) + str.substring(3,str.length()-2) + str.substring(str.length()-1) );
+        System.out.print( str.substring(0,2) + str.substring(3,leng-2) + str.substring(leng-1) );
     }
 }
