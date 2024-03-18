@@ -29,8 +29,8 @@ public class Main {
                 }
             }
 
-            String str = String.valueOf(arr);
-            System.out.println(str);
+            s = String.valueOf(arr);
+            System.out.println(s);
         }
     }
 }
