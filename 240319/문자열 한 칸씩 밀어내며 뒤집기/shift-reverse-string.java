@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        StringBuilder sb = new StringBuilder();
 
         String str = sc.next();
         int n = sc.nextInt();
@@ -12,10 +13,10 @@ public class Main {
             int k = sc.nextInt();
 
             if ( k == 1 ) 
-                str = str.substring(1) + str.substring(0,1);
+                str = str.substring(1) + str.charAt(0);
 
             else if ( k == 2 ) 
-                str = str.substring(a-1) + str.substring(0,a-1);
+                str = str.charAt(a-1) + str.substring(0,a-1);
 
             else {
                 String sum = "";
