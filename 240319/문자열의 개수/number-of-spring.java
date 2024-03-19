@@ -11,13 +11,13 @@ public class Main {
         while ( sc.hasNextLine() ) {
             arr[cnt] = sc.next();
 
-            if ( arr[cnt] == "0" )
+            if ( arr[cnt].equals("0") )
                 break;
             
             cnt++;
         }
 
-        System.out.println(cnt-1);
+        System.out.println(cnt);
         
         for ( int i = 0 ; i < cnt ; i++ ) {
             if ( i % 2 == 0 )
