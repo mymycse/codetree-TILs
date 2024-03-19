@@ -14,9 +14,12 @@ public class Main {
             if ( str.equals(s) )
                 break;
 
-            str = str.charAt(n-1) + str.substring(0,n-1);
+            s = s.charAt(n-1) + s.substring(0,n-1);
             cnt++;
         }
-        System.out.print(cnt);
+        if ( cnt == n )
+            System.out.print(-1);
+        else 
+            System.out.print(cnt);
     }
 }
