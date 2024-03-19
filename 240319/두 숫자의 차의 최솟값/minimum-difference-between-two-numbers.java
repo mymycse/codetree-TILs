@@ -15,7 +15,7 @@ public class Main {
 
         int Min = Integer.MAX_VALUE;
 
-        for ( int i = 1 ; i < n-1 ; i++ ) {
+        for ( int i = 1 ; i < n ; i++ ) {
             if ( arr[i] - arr[i-1] < Min )
                 Min = arr[i] - arr[i-1];
         }
