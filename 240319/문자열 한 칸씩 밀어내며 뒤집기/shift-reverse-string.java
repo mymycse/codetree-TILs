@@ -3,9 +3,9 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        StringBuilder sb = new StringBuilder();
 
         String str = sc.next();
+        StringBuffer sb = new StringBuffer(str);
 
         int n = sc.nextInt();
         int a = str.length();
@@ -15,19 +15,26 @@ public class Main {
             String result = "";
 
             if ( k == 1 ) 
-                result = str.substring(1) + str.charAt(0);
+                str = str.substring(1) + str.charAt(0);
 
             else if ( k == 2 ) 
-                result = str.charAt(a-1) + str.substring(0,a-1);
+                str = str.charAt(a-1) + str.substring(0,a-1);
 
             else {
-                String sum = "";
-                for ( int j = a-1 ; j >= 0 ; j-- ) 
-                    result += str.charAt(j);
-            }
-            System.out.println(result);
+                char[] arr = str.toCharArray();
 
-            str = result;
+char temp;
+for(int j = 0; j < a / 2; j++) {
+    temp = arr[j];
+    arr[j] = arr[a - j - 1];
+    arr[a - j - 1] = temp;
+}
+
+str = new String(arr);
+            }
+
+            System.out.println(str);
+
         }
     }
 }
