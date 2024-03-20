@@ -2,6 +2,10 @@ import java.util.Scanner;
 
 public class Main {
     public static boolean isPrime( int n ) {
+
+        if ( n == 1 )
+            return false;
+            
         for ( int i = 2 ; i < n ; i++ )
             if ( n % i == 0 )
                 return false;
@@ -17,12 +21,10 @@ public class Main {
 
         int sum = 0;
 
-        if ( a == 1 && b == 1 ) {}
-        else {
         for ( int i = a ; i <= b ; i++ ) {
             if ( isPrime(i) )
                 sum += i;
-        }}
+        }
         System.out.print(sum);
     }
 }
