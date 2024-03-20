@@ -17,10 +17,12 @@ public class Main {
 
         int sum = 0;
 
+        if ( a == 1 && b == 0 ) {}
+        else {
         for ( int i = a ; i <= b ; i++ ) {
             if ( isPrime(i) )
                 sum += i;
-        }
+        }}
         System.out.print(sum);
     }
 }
