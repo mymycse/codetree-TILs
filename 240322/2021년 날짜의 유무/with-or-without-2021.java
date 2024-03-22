@@ -8,7 +8,7 @@ public class Main {
             return true;
         else if ( ( m < 8 && m % 2 == 1 || m > 6 && m % 2 == 0 ) && d < 32 )
             return true;
-        else if ( (m > 2 && m < 8 && m % 2 == 0 || m > 8  && m % 2 == 0 ) && d < 31 )
+        else if ( ( m > 2 && m < 8 && m % 2 == 0 || m > 8  && m % 2 == 1 ) && d < 31 )
             return true;
         return false;
     }
