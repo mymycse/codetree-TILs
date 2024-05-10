@@ -18,7 +18,7 @@ public class Main {
                 x += dx[fr];
                 y += dy[fr];
             } else if ( c == 'R' ) {
-                fr = (fr+3)%4;
+                fr = (fr+1)%4;
             } else {
                 fr = (fr-1)%4;
             }
