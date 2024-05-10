@@ -20,7 +20,7 @@ public class Main {
             } else if ( c == 'R' ) {
                 fr = (fr+1)%4;
             } else {
-                fr = (fr-1)%4;
+                fr = (fr+3)%4;
             }
         }
 
