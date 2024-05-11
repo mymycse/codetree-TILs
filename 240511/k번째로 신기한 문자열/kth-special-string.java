@@ -16,8 +16,8 @@ public class Main {
         Arrays.sort(words);
 
         for ( int i = 0 ; i < n ; i++ ) {
-            String st = words[i];
-            if ( str.equals(st.substring(0,str.length())) ) {
+            String st = words[i].substring(0,str.length());
+            if ( str.equals(st) ) {
                 System.out.print(words[i+k-1]);
                 break;
             }
