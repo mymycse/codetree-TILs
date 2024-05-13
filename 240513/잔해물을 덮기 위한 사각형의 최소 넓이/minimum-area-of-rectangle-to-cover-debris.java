@@ -3,25 +3,31 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
         int[][] map = new int[2001][2001];
 
-        for ( int i = 1 ; i <= 2 ; i++ ) {
-            int x1 = sc.nextInt();
-            int y1 = sc.nextInt();
-            int x2 = sc.nextInt();
-            int y2 = sc.nextInt();
+        int ax1 = sc.nextInt();
+        int ay1 = sc.nextInt();
+        int ax2 = sc.nextInt();
+        int ay2 = sc.nextInt();
 
-            for ( int a = x1 ; a < x2 ; a++ )
-                for ( int b = y1 ; b < y2 ; b++ )
-                    map[a+1000][b+1000] += i;
-        }
+        for ( int a = ax1 ; a < ax2 ; a++ )
+            for ( int b = ay1 ; b < ay2 ; b++ )
+                map[a+1000][b+1000]++;
+
+        int bx1 = sc.nextInt();
+        int by1 = sc.nextInt();
+        int bx2 = sc.nextInt();
+        int by2 = sc.nextInt();
+
+        for ( int a = bx1 ; a < bx2 ; a++ )
+            for ( int b = by1 ; b < by2 ; b++ )
+                map[a+1000][b+1000]++;
 
         int minX=1000,maxX=-1000,minY=1000,maxY=-1000;
 
-        for ( int i = 0 ; i <= 2000 ; i++ )
-            for ( int j = 0 ; j <= 2000 ; j++ )
-                if ( map[i][j] == 1 ) {
+        for ( int i = ax1 ; i < ax2 ; i++ )
+            for ( int j = ay1 ; j < ay2 ; j++ )
+                if ( map[i+1000][j+1000] == 1 ) {
                     if ( minX > i )
                         minX = i;
                     if ( maxX < i )
@@ -32,6 +38,6 @@ public class Main {
                         maxY = j;
                 }
 
-        System.out.print((maxX-minX-1)*(maxY-minY));
+        System.out.print((maxX-minX+1)*(maxY-minY+1));
     }
 }
