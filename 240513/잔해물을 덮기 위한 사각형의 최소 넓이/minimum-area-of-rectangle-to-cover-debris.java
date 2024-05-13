@@ -23,7 +23,8 @@ public class Main {
             for ( int b = by1 ; b < by2 ; b++ )
                 map[a+1000][b+1000]++;
 
-        int minX=1000,maxX=-1000,minY=1000,maxY=-1000;
+
+        int minX=ax1,maxX=ax2,minY=ay1,maxY=ay2;
 
         for ( int i = ax1 ; i < ax2 ; i++ )
             for ( int j = ay1 ; j < ay2 ; j++ )
@@ -38,6 +39,6 @@ public class Main {
                         maxY = j;
                 }
 
-        System.out.print((maxX-minX+1)*(maxY-minY+1));
+        System.out.print((maxX-minX)*(maxY-minY));
     }
 }
