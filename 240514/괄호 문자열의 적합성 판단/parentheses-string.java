@@ -12,7 +12,7 @@ public class Main {
             else {
                 if (s.isEmpty()) {
                     System.out.println("No");
-                    break;
+                    System.exit(0);
                 }
                 s.pop();
             }
