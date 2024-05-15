@@ -7,7 +7,7 @@ public class Main {
         Student st1 = new Student();
         System.out.printf("user %s lv %d\n", st1.id, st1.lv);
 
-        Student st2 = new Student("hello", 28);
+        Student st2 = new Student(sc.next(), sc.nextInt());
         System.out.printf("user %s lv %d", st2.id, st2.lv);
     }
 }
