@@ -23,7 +23,7 @@ public class Main {
         for ( int i = 1 ; i < m ; i++ )
             result += month[i];
         
-        return result+d;
+        return (result+d);
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -34,11 +34,11 @@ public class Main {
         int d2 = sc.nextInt();
 
         int elpasedDays = days(m2,d2) - days(m1,d1);
-        int result = (elpasedDays/7)+1;
+        int result = elpasedDays/7;
 
         int p = change(sc.next());
         
-        if ( elpasedDays%7 < p )
+        if ( elpasedDays%7 <= p )
             result++;
 
         System.out.println(result);
