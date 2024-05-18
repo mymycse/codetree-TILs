@@ -13,11 +13,11 @@ public class Main {
             int a = sc.nextInt();
             char b = sc.next().charAt(0);
 
-            while ( a-- > 0 ){
+            for ( int i = x ; i < x+a ; i++ ) {
                 if ( b == 'R' )
-                    map[x++]++;
+                    map[i]++;
                 else
-                    map[x--]++;
+                    map[i]++;
             }
         }
 
