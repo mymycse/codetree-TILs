@@ -24,9 +24,9 @@ public class Main {
         Arrays.sort(map);
 
         for ( int i = 2000 ; i >= 0 ; i-- ){
-            if ( map[i] <= 1 )
-                break;
-            cnt++;
+            if ( map[i] >= 2 )
+                cnt++;
+            
         }
 
         System.out.println(cnt);
