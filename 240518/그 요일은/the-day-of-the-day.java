@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static int change (String str) {
         if ( str.equals("Mon") )
-            return 7;
+            return 0;
         if ( str.equals("Tue") )
             return 1;
         if ( str.equals("Wed") )
