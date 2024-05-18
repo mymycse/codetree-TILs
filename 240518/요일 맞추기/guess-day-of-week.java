@@ -33,7 +33,6 @@ public class Main {
 
             while ( true ) {
                 if ( m1 == m2 && d1 == d2 ) {
-                    elapsedDays++;
                     break;
                 }
 
