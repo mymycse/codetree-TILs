@@ -38,7 +38,7 @@ public class Main {
 
         int p = change(sc.next());
         
-        if ( elpasedDays%7 <= p )
+        if ( elpasedDays%7 < p )
             result++;
 
         System.out.println(result);
