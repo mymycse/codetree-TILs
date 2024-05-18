@@ -3,18 +3,18 @@ import java.util.Scanner;
 public class Main {
     public static int change (String str) {
         if ( str.equals("Mon") )
-            return 0;
-        if ( str.equals("Tue") )
             return 1;
-        if ( str.equals("Wed") )
+        if ( str.equals("Tue") )
             return 2;
-        if ( str.equals("Thu") )
+        if ( str.equals("Wed") )
             return 3;
-        if ( str.equals("Fri") )
+        if ( str.equals("Thu") )
             return 4;
-        if ( str.equals("Sat") )
+        if ( str.equals("Fri") )
             return 5;
-        return 6; 
+        if ( str.equals("Sat") )
+            return 6;
+        return 7; 
     }
     public static int days (int m, int d) {
         int[] month = {0,31,29,31,30,31,30,31,31,30,31,30,31};
