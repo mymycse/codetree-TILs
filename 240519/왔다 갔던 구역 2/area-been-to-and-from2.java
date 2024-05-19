@@ -21,9 +21,7 @@ public class Main {
             }
         }
 
-        Arrays.sort(map);
-
-        for ( int i = 2000 ; i >= 0 ; i-- ){
+        for ( int i = 0 ; i < map.length ; i++ ){
             if ( map[i] >= 2 )
                 cnt++;
             
