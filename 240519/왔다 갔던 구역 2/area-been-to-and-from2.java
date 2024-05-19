@@ -15,9 +15,9 @@ public class Main {
 
             for ( int i = 0 ; i < a ; i++ ) {
                 if ( b == 'R' )
-                    map[x++]++;
+                    map[++x]++;
                 else
-                    map[x--]++;
+                    map[--x]++;
             }
         }
 
