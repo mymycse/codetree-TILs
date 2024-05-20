@@ -13,17 +13,17 @@ public class Main {
         for ( int i = 0 ; i < n ; i++ ) {
             arr[i] = sc.nextInt();
 
-            if ( arr[i] > k )
+            if ( arr[i] > k ) {
                 if ( i > 0 && arr[i-1] >= arr[i] ) 
                     cnt = 1;
                 else 
                     cnt++;
-            else
+            } else
                 cnt = 0;
 
             ans = Math.max(ans,cnt);
         }
 
-        System.out.println(ans);
+        System.out.println(ans <= 1 ? 0 : ans);
     }
 }
