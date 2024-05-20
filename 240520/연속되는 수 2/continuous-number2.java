@@ -6,21 +6,20 @@ public class Main {
         int n = sc.nextInt();
         int[] arr = new int[n];
         int[] idx = new int[3];
-        int cnt = 1;
-        int last = 1;
+        int cnt = 0;
+        int ans = 0;
 
         for ( int i = 0 ; i < n ; i++ ) {
             arr[i] = sc.nextInt();
             
-            if ( i == 0 || arr[i] == arr[i-1] ) {
+            if ( i >= 1 && arr[i] == arr[i-1] )
                 cnt++;
-            } else if ( arr[i] != arr[i-1] ) {
-                if ( cnt > last )
-                    last = cnt;
+            else 
                 cnt = 1;
-            }
+
+            ans = Math.max(cnt,ans);
         }
 
-        System.out.println(last);
+        System.out.println(ans);
     }
 }
