@@ -16,11 +16,11 @@ public class Main {
             if ( i > 0 && arr[i] > k && arr[i] > arr[i-1] )
                 cnt++;
             else
-                cnt = 1;
+                cnt = 0;
 
             ans = Math.max(ans,cnt);
         }
 
-        System.out.println(ans-1);
+        System.out.println(ans);
     }
 }
