@@ -14,15 +14,17 @@ public class Main {
             switch(c) {
                 case 'R' :
                     while ( x-- > 0 ) {
-                        flip[loc++] = 1;
-                        if ( x == 1 )
+                        flip[loc] = 1;
+                        loc++;
+                        if ( x == 0 )
                             loc--;
                     }
                     break;
                 case 'L' :
                     while ( x-- > 0 ) {
-                        flip[loc--] = -1;
-                        if ( x == 1 )
+                        flip[loc] = -1;
+                        loc--;
+                        if ( x == 0 )
                             loc++;
                     }
                     break;
@@ -33,12 +35,14 @@ public class Main {
         int black = 0;
 
         for ( int i : flip ) {
-            if ( i == 1 )
+            if ( i == 0 )
+                continue;
+            else if ( i == 1 )
                 black++;
-            else if ( i == -1 )
+            else
                 white++;
         }
 
-        System.out.print(black + " " + white);
+        System.out.print( white + " " + black );
     }
 }
