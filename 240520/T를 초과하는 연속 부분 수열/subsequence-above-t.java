@@ -21,6 +21,6 @@ public class Main {
             ans = Math.max(ans,cnt);
         }
 
-        System.out.println(ans);
+        System.out.println(ans == 1 ? 0 : ans);
     }
 }
