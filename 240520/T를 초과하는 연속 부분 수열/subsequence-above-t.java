@@ -14,10 +14,10 @@ public class Main {
             arr[i] = sc.nextInt();
 
             if ( arr[i] > k )
-                if ( cnt == 0 || i > 0 && arr[i] > arr[i-1] ) 
+                if ( cnt == 0 || i == 0 || arr[i] > arr[i-1] ) 
                     cnt++;
                 else 
-                    cnt = 0;
+                    cnt = 1;
             else
                 cnt = 0;
 
