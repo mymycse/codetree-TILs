@@ -9,7 +9,7 @@ public class Main {
 
         for ( int i = 0 ; i < n ; i++ ) {
             arr[i] = sc.nextInt();
-            if ( i == 0 || arr[i] != arr[i-1] ) {
+            if ( i == 0 || arr[i] != arr[i-1] || i == n-1) {
                 idx[0] = idx[1];
                 idx[1] = i;
             }
