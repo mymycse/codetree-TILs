@@ -13,8 +13,11 @@ public class Main {
         for ( int i = 0 ; i < n ; i++ ) {
             arr[i] = sc.nextInt();
 
-            if ( arr[i] > k && i > 0 && arr[i] > arr[i-1] )
-                cnt++;
+            if ( arr[i] > k )
+                if ( i > 0 && arr[i] > arr[i-1] ) 
+                    cnt++;
+                else
+                    cnt = 1;
             else
                 cnt = 0;
 
