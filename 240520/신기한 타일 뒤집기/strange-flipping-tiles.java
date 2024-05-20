@@ -15,17 +15,15 @@ public class Main {
                 case 'R' :
                     while ( x-- > 0 ) {
                         flip[loc] = 1;
-                        loc++;
-                        if ( x == 0 )
-                            loc--;
+                        if ( x != 0 )
+                            loc++;
                     }
                     break;
                 case 'L' :
                     while ( x-- > 0 ) {
                         flip[loc] = -1;
-                        loc--;
-                        if ( x == 0 )
-                            loc++;
+                        if ( x != 0 )
+                            loc--;
                     }
                     break;
             }
