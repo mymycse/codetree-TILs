@@ -18,6 +18,6 @@ public class Main {
                 idx[2] = idx[1]-idx[0];
         }
 
-        System.out.println(idx[2]);
+        System.out.println(idx[2] == 0 ? 1 : idx[2]);
     }
 }
