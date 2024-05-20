@@ -6,18 +6,21 @@ public class Main {
         int n = sc.nextInt();
         int[] arr = new int[n];
         int[] idx = new int[3];
+        int cnt = 1;
+        int last = 1;
 
         for ( int i = 0 ; i < n ; i++ ) {
             arr[i] = sc.nextInt();
-            if ( i == 0 || arr[i] != arr[i-1] || i == n-1) {
-                idx[0] = idx[1];
-                idx[1] = i;
+            
+            if ( i == 0 || arr[i] == arr[i-1] ) {
+                cnt++;
+            } else if ( arr[i] != arr[i-1] ) {
+                if ( cnt > last )
+                    last = cnt;
+                cnt = 1;
             }
-
-            if ( idx[1]-idx[0] > idx[2] )
-                idx[2] = idx[1]-idx[0];
         }
 
-        System.out.println(idx[2] == 0 ? 1 : idx[2]);
+        System.out.println(last);
     }
 }
