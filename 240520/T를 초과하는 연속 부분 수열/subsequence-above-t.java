@@ -13,7 +13,7 @@ public class Main {
         for ( int i = 0 ; i < n ; i++ ) {
             arr[i] = sc.nextInt();
 
-            if ( i > 0 && arr[i] > k && arr[i] > arr[i-1] )
+            if ( arr[i] > k && i > 0 && arr[i] > arr[i-1] )
                 cnt++;
             else
                 cnt = 0;
@@ -21,6 +21,6 @@ public class Main {
             ans = Math.max(ans,cnt);
         }
 
-        System.out.println(ans == 1 ? 0 : ans);
+        System.out.println(ans);
     }
 }
