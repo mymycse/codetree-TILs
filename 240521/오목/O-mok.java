@@ -53,6 +53,8 @@ public class Main {
                 }
 
         System.out.println(win);
-        System.out.println(r + " " + c);
+        
+        if ( win != 0 )
+            System.out.println(r + " " + c);
     }
 }
