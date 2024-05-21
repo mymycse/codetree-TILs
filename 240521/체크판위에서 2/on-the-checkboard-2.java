@@ -20,7 +20,7 @@ public class Main {
             for ( int j = 1 ; j < c-2 ; j++ )
                 for ( int a = i+1 ; a < r-1 ; a++ )
                     for ( int b = j+1 ; b < c-1 ; b++ )
-                        if ( start != grid[i][j] && end != grid[a][b] )
+                        if ( start != grid[i][j] && grid[i][j] != grid[a][b] && grid[a][b] != end )
                             cnt++;
 
         System.out.println(cnt);
