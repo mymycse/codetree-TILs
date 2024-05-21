@@ -12,7 +12,7 @@ public class Main {
             sum += num[i];
         }
 
-        int ans = sum;
+        int ans = Integer.MAX_VALUE;
 
         for ( int i = 0 ; i < n ; i++ )
             for ( int j = i+1 ; j < n ; j++ )
