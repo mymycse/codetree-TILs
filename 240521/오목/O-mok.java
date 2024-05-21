@@ -49,7 +49,7 @@ public class Main {
                 if ( map[i][j] != 0 && map[i][j] == map[i+1][j-1] && map[i+1][j-1] == map[i+2][j-2] &&
                 map[i+2][j-2] == map[i+3][j-3] && map[i+3][j-3] == map[i+4][j-4] ) {
                     win = map[i][j];
-                    r = i+3 ; c = j-2;
+                    r = i+3 ; c = j-1;
                 }
 
         System.out.println(win);
