@@ -10,18 +10,15 @@ public class Main {
         int ans = 0;
         int[] arr = new int[n];
 
-        for ( int i = 0 ; i < n ; i++ ) {
+        for ( int i = 0 ; i < n ; i++ )
             arr[i] = sc.nextInt();
 
-            if ( arr[i] > k ) {
-                if ( i > 0 && arr[i-1] >= arr[i] ) 
-                    cnt = 1;
-                else 
-                    cnt++;
-            } else
+        for ( int i = 0 ; i < n ; i++ ) {
+            if ( arr[i] <= k ) {
+                ans = Math.max(ans,cnt);
                 cnt = 0;
-
-            ans = Math.max(ans,cnt);
+            } else
+                cnt++;
         }
 
         System.out.println(ans <= 1 ? 0 : ans);
