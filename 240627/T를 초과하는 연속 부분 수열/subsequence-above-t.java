@@ -21,6 +21,6 @@ public class Main {
                 cnt++;
         }
 
-        System.out.println(ans <= 1 ? 0 : ans);
+        System.out.println(ans);
     }
 }
