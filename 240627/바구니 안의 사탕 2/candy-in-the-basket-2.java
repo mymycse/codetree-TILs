@@ -17,10 +17,13 @@ public class Main {
         for ( int i = 1 ; i <= 100 ; i++ )
             map[i] += map[i-1];
 
-        for ( int i = k+1 ; i <= 100-k ; i++ ) {
-            int sum = map[i+k]-map[i-k-1];
-            result = Math.max(sum,result);
-        }
+        if ( k >= 50 )
+            result = map[100];
+        else
+            for ( int i = k+1 ; i <= 100-k ; i++ ) {
+                int sum = map[i+k]-map[i-k-1];
+                result = Math.max(sum,result);
+            }
 
         System.out.println(result);
     }
