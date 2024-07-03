@@ -6,7 +6,7 @@ public class Main {
 
         int n = sc.nextInt();
         int h = sc.nextInt();
-        int m = sc.nextInt();
+        int t = sc.nextInt();
 
         int[] farm = new int[n];
 
@@ -15,12 +15,16 @@ public class Main {
             farm[i] = Math.abs(k-h);
         }
 
-        Arrays.sort(farm);
+        int cost = Integer.MAX_VALUE;
 
-        int cost = 0;
+        for ( int i = 0 ; i <= n-t ; i++ ) {
+            int sum = 0;
+            
+            for ( int j = i ; j < i+t ; j++ )
+                sum += farm[j];
 
-        for ( int i = 0 ; i < m ; i++ )
-            cost += farm[i];
+            cost = Math.min(cost,sum);
+        }
 
         System.out.println(cost);
     }
