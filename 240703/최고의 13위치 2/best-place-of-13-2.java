@@ -20,7 +20,7 @@ public class Main {
 
         for ( int i = 0 ; i < n ; i++ )
             for ( int j = 0 ; j < n-2 ; j++ )
-                for ( int r = i ; r < n ; r++ )
+                for ( int r = 0 ; r < n ; r++ )
                     for ( int c = 0 ; c < n-2 ; c++ ) {
                         if ( i == r && Math.abs(j-c) < 2 )
                             continue;
