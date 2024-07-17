@@ -61,6 +61,8 @@ public class Main {
             }
         }
 
-        System.out.println(leadChanges-1);
+        int result = leadChanges == 0 ? leadChanges : leadChanges-1 ;
+        
+        System.out.println(result);
     }
 }
