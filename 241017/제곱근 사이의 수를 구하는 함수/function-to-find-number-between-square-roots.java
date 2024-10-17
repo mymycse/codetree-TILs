@@ -11,6 +11,6 @@ public class Main {
 
         int cnt = (int)d1 - (int)d2;
 
-        System.out.println(cnt);
+        System.out.println(Math.abs(cnt));
     }
 }
