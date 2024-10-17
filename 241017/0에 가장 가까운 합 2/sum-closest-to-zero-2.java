@@ -33,9 +33,9 @@ public class Main {
             } 
 
             if ( temp >= 0 ) 
-                st++;
-            else
                 en--;
+            else
+                st++;
         }
 
         System.out.println(res[0] + " " + res[1]);
