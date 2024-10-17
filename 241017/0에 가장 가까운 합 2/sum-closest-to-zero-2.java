@@ -15,11 +15,11 @@ public class Main {
 
         int st = 0;
         int en = n-1;
-        int sum = Integer.MAX_VALUE;
+        long sum = Integer.MAX_VALUE;
         int[] res = new int[2];
 
         while ( st < en ) {
-            int temp = arr[st]+arr[en];
+            long temp = arr[st]+arr[en];
 
             if ( Math.abs(temp) < sum ) {
                 res[0] = arr[st];
