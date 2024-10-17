@@ -6,7 +6,7 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         int n = Integer.parseInt(br.readLine());
-        int[] arr = new int[n];
+        long[] arr = new long[n];
         StringTokenizer str = new StringTokenizer(br.readLine());
         for ( int i = 0 ; i < n ; i++ )
             arr[i] = Integer.parseInt(str.nextToken());
@@ -16,7 +16,7 @@ public class Main {
         int st = 0;
         int en = n-1;
         long sum = Integer.MAX_VALUE;
-        int[] res = new int[2];
+        long[] res = new long[2];
 
         while ( st < en ) {
             long temp = arr[st]+arr[en];
